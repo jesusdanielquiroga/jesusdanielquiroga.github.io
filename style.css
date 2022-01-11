@@ -18,6 +18,21 @@ a{
     align-items: center;
     justify-content: center;
 }
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+p{
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+}
+
+
 /* Hero section */
 #hero{
     background-image: url(img/heros.jpg);
@@ -98,7 +113,83 @@ a{
     background-color: crimson;
 }
 /* End hero Section */
+
+
 /* CV Section */
+#cv .cv {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin:  0 auto;
+    padding: 100px 0;
+}
+#cv .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+#cv .section-title span{
+    color: crimson;
+}
+#cv .cv-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#cv .cv_item{
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(/img/carrito.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+#cv .cv_item::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .8;
+    z-index: -1;
+}
+#cv .cv-bottom .icon{
+    height: 80px;
+    width: 80px;
+    margin-top: 20px;
+}
+#cv .cv_item h2{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#cv .cv_item h3{
+    font-size:1.6rem;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+#cv .cv_item p{
+    color: white;
+    text-align: left;
+}
+
 
 /* End CV Section */
 /* Keyframes */
@@ -124,4 +215,4 @@ a{
     }
 }
 /* End Keyframes */
-/* 36:01*/
+/* 1:04:27*/
